@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload and Retrieve Files using GridFS in MongoDB</title>
+</head>
+
+<body>
+    <h1>Upload File to MongoDB using GridFS</h1>
+    <form action="http://localhost:8081/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"><br>
+        <input type="submit" value="Upload">
+    </form>
+    <br>
+    <h1>Retrieve File from MongoDB using GridFS</h1>
+    <form action="http://localhost:8081/retrieve" method="GET">
+        <label for="file_id">File ID:</label>
+        <input type="text" name="file_id" id="file_id"><br>
+        <input type="submit" value="Retrieve">
+    </form>
+</body>
+
+</html>
